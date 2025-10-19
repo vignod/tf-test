@@ -198,7 +198,7 @@ resource "aws_security_group" "crm-web-sg" {
   vpc_id      = aws_vpc.crm_vpc.id
 
   tags = {
-    Name = "crm-api-sg"
+    Name = "crm-web-sg"
   }
 }
 
