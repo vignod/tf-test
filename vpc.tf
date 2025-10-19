@@ -91,7 +91,7 @@ resource "aws_route_table_association" "crm-db-asc" {
 
 # crm web nacl
 
-resource "aws_network_acl" "crn-web-nacl" {
+resource "aws_network_acl" "crm-web-nacl" {
   vpc_id = aws_vpc.crm_vpc.id
 
   egress {
@@ -119,7 +119,7 @@ resource "aws_network_acl" "crn-web-nacl" {
 
 # crm api nacl
 
-resource "aws_network_acl" "crn-api-nacl" {
+resource "aws_network_acl" "crm-api-nacl" {
   vpc_id = aws_vpc.crm_vpc.id
 
   egress {
@@ -147,7 +147,7 @@ resource "aws_network_acl" "crn-api-nacl" {
 
 #crm db nacl
 
-resource "aws_network_acl" "crn-db-nacl" {
+resource "aws_network_acl" "crm-db-nacl" {
   vpc_id = aws_vpc.crm_vpc.id
 
   egress {
