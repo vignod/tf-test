@@ -181,7 +181,7 @@ resource "aws_network_acl_association" "crm-web-nacl-asc" {
 
 #crm api nacl association
 resource "aws_network_acl_association" "crm-api-nacl-asc" {
-  network_acl_id = aws_network_crm-api-nacl..id
+  network_acl_id = aws_network.crm-api-nacl.id
   subnet_id      = aws_subnet.crm-api-sn.id
 }
 
