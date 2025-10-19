@@ -196,7 +196,7 @@ resource "aws_network_acl_association" "crm-db-nacl-asc" {
 resource "aws_security_group" "crm-web-sg" {
   name        = "crm-web-sg"
   description = "Allow SSH & HTTP traffic"
-  vpc_id      = aws_vpc.main.crm_vpc.id
+  vpc_id      = aws_vpc.crm_vpc.id
 
   tags = {
     Name = "crm-web-sg"
